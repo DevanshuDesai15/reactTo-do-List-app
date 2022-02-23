@@ -1,9 +1,15 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    right: 0;
+  }
 }
 
 body {
@@ -17,9 +23,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 520px;
+  width: 70%;
   min-height: 600px;
-  background: #161a2b;
+  background: rgba(0, 0, 0, 0.6);
   text-align: center;
   margin: 128px auto;
   border-radius: 10px;
@@ -44,9 +50,9 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #270b5f;
+  border: 2px solid #bdb0d6;
   outline: none;
-  width: 320px;
+  width: 30%;
   background: transparent;
   color: #fff;
 }
@@ -103,7 +109,7 @@ h1 {
 
   padding: 16px;
   border-radius: 5px;
-  width: 90%;
+  width: 80%;
 }
 
 .todo-row:nth-child(4n + 1) {
