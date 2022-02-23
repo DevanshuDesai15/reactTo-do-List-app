@@ -24,7 +24,7 @@ function TodoForm(props) {
     };
 
     return (
-        <form className='todo-form' onSubmit={handleSubmit}>
+        <form className='todo-form' data-testid="enterTodo" onSubmit={handleSubmit}>
             {props.edit ? (<>
             <input 
             type='text' 
